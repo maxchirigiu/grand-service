@@ -1,0 +1,15 @@
+Place your pasted screenshot image here and name it exactly `gs_screenshot.png`.
+
+Path to save:
+/Users/maxim/HTML/grand-service/assets/gs_screenshot.png
+
+Steps:
+1. Save the screenshot you pasted into this workspace as a PNG named `gs_screenshot.png`.
+2. Put it into the `assets` folder above.
+3. Refresh the pages in your browser (`index.html`, `booking.html`, `reviews.html`).
+
+If you want, you can also run this command in Terminal (from the project folder) after placing the file:
+
+  open index.html
+
+If you'd like, upload the image file here and I can add it for you.
