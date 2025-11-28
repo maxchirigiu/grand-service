@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Grand Service — профессиональный автосервис в Cahul">
+  <title>Grand Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+  <link rel="icon" href="assets/Снимок экрана 2025-11-19 в 15.01.35.png">
+          <img src="assets/Снимок экрана 2025-11-19 в 15.01.35.png" alt="Grand Service logo" class="logo-img">
+        <div>
+          <div class="brand">Grand Service</div>
+          <div class="text-muted" style="font-size:12px">Auto Repair & Diagnostics</div>
+        </div>
+      </div>
+      <nav class="nav" role="navigation">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="booking.html" data-i18n="nav.booking">Бронирование</a>
+        <a href="reviews.html" data-i18n="nav.reviews">Отзывы</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+        <button class="cta-btn" onclick="location.href='booking.html'" data-i18n="nav.cta">Записаться</button>
+      </nav>
+      <div class="lang-switch" style="display:flex;gap:8px;align-items:center">
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card fade-in">
+        <h1 data-i18n="hero.title">Grand Service</h1>
+        <p class="lead" data-i18n="hero.lead">Профессиональный автосервис: диагностика, ремонт двигателя, замена масла, развал схождения и многое другое.</p>
+        <div class="actions">
+          <button class="btn primary" onclick="location.href='booking.html'" data-i18n="hero.book">Записаться</button>
+          <button class="btn" onclick="location.href='reviews.html'" data-i18n="hero.reviewsBtn">Отзывы</button>
+        </div>
+        <div style="margin-top:18px;color:var(--muted)" data-i18n="contact.line">Тел: <b>076717322</b> • Cahul City, Nicolaie Balcescu 32</div>
+      </div>
+        <div class="card-hero-right slide-left">
+          <img class="service-image" src="assets/grandser.png" alt="service" data-i18n-alt="service.our.title">
+          <div class="text-muted center" data-i18n="hero.tagline" style="color: #00B3EE;">Качественный сервис для вашего автомобиля</div>
+        </div>
+    </section>
+
+    <section class="section about fade-in" id="about">
+      <h2 data-i18n="about.title">О нас</h2>
+      <div class="card-row">
+        <div class="card">
+          <h3 data-i18n="about.team.title">Опытная команда</h3>
+          <p data-i18n="about.team.text">Наши мастера имеют многолетний опыт в ремонте европейских и азиатских авто.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="about.equipment.title">Современное оборудование</h3>
+          <p data-i18n="about.equipment.text">Диагностика и ремонт на профессиональном уровне с использованием современного оборудования.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="about.warranty.title">Гарантия качества</h3>
+          <p data-i18n="about.warranty.text">Мы предоставляем гарантию на выполненные работы и используемые детали.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <h2 data-i18n="services.title">Наши услуги</h2>
+      <div class="services-grid">
+        <div class="service fade-in">
+          <img src="assets/image_diagnostics-removebg-preview.png" alt="diagnostics">
+            <h4 data-i18n="service.diagnostics.title">Диагностика</h4>
+            <p class="text-muted" data-i18n="service.diagnostics.desc">Компьютерная диагностика двигателя и электронных систем.</p>
+        </div>
+        <div class="service fade-in">
+          <img src="assets/IMG_7341_3-removebg-preview.png" alt="engine" style="width: 70px; height: 50px;">
+            <h4 data-i18n="service.engine.title">Ремонт двигателя</h4>
+            <p class="text-muted" data-i18n="service.engine.desc">Ремонт и восстановление компонентов двигателя.</p>
+        </div>
+        <div class="service fade-in">
+          <img src="assets/IMG_7341-removebg-preview.png" alt="oil" style="width: 70px; height: 50px;">
+            <h4 data-i18n="service.oil.title">Замена масла</h4>
+            <p class="text-muted" data-i18n="service.oil.desc">Быстрая замена масла и фильтров с гарантией качества.</p>
+        </div>
+        <div class="service fade-in">
+          <img src="assets/IMG_7341_2-removebg-preview.png" alt="alignment service" style="width: 70px; height: 50px;">
+            <h4 data-i18n="service.alignment.title">Развал схождения</h4>
+            <p class="text-muted" data-i18n="service.alignment.desc">Профессиональная настройка углов колес для безопасного вождения.</p>
+        </div>
+          <div class="service fade-in">
+            <img src="assets/Снимок экрана 2025-11-19 в 15.01.35.png" alt="Наш сервис" class="service-photo">
+              <h4 data-i18n="service.our.title">Наш сервис</h4>
+              <p class="text-muted" data-i18n="service.our.desc">Фотография сервиса Grand Service — знакомьтесь с нашим центром обслуживания.</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <h2 data-i18n="reviews.title">Отзывы наших клиентов</h2>
+      <div class="reviews-grid">
+        <div class="review">
+          <strong data-i18n="review.1.name">Алексей</strong>
+          <p class="text-muted" data-i18n="review.1.text">Отличный сервис, поменяли масло и сделали диагностику за один визит.</p>
+        </div>
+        <div class="review">
+          <strong data-i18n="review.2.name">Марина</strong>
+          <p class="text-muted" data-i18n="review.2.text">Вежливый персонал и разумные цены. Рекомендую.</p>
+        </div>
+        <div class="review">
+          <strong data-i18n="review.3.name">Виктор</strong>
+          <p class="text-muted" data-i18n="review.3.text">Поменяли тормоза быстро, машина как новая.</p>
+        </div>
+      </div>
+      <div style="margin-top:12px">
+        <a href="reviews.html" class="btn" data-i18n="reviews.readAll">Читать все отзывы</a>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="contacts">
+      <h2 data-i18n="contacts.title">Контакты</h2>
+      <div class="card-row">
+        <div class="card">
+          <h3 data-i18n="contacts.address.title">Адрес</h3>
+          <p class="text-muted" data-i18n="contacts.address.text">Cahul City, str. Nicolaie Balcescu 32</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contacts.phone.title">Телефон</h3>
+          <p class="text-muted" data-i18n="contacts.phone.text">076717322</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contacts.hours.title">Часы работы</h3>
+          <p class="text-muted" data-i18n="contacts.hours.text">Пн-Пт: 9:00 — 18:00, Сб: 9:00 — 14:00</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer center">
+      <div data-i18n="footer.copy">© Grand Service — Все права защищены</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
