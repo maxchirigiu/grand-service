@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Бронирование — Grand Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/Снимок экрана 2025-11-19 в 15.01.35.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="assets/Снимок экрана 2025-11-19 в 15.01.35.png" alt="Grand Service logo" class="logo-img">
+        <div>
+          <div class="brand">Grand Service</div>
+          <div class="text-muted" style="font-size:12px" data-i18n="brand.subtitle">Бронирование</div>
+        </div>
+      </div>
+      <nav class="nav" role="navigation">
+        <a href="index.html" data-i18n="nav.home">Главная</a>
+        <a href="index.html#services" data-i18n="nav.services">Услуги</a>
+        <a href="booking.html" data-i18n="nav.booking">Бронирование</a>
+        <a href="reviews.html" data-i18n="nav.reviews">Отзывы</a>
+        <a href="index.html#contacts" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h2 data-i18n="booking.title">Запись на сервис</h2>
+      <div class="form-card">
+        <form id="booking-form">
+          <div class="form-row">
+            <input class="input" type="text" name="name" placeholder="Ваше имя" data-i18n-placeholder="booking.name.placeholder" required>
+            <input class="input" type="tel" name="phone" placeholder="Телефон" data-i18n-placeholder="booking.phone.placeholder" required>
+          </div>
+          <div style="margin-top:12px">
+            <select name="service" class="input" required data-i18n-select="booking.service.options">
+                <option value="" data-i18n="booking.service.placeholder">Выберите тип услуги</option>
+                <option value="Диагностика" data-i18n="booking.service.option.diagnostics">Диагностика</option>
+                <option value="Ремонт двигателя" data-i18n="booking.service.option.engine">Ремонт двигателя</option>
+                <option value="Замена масла" data-i18n="booking.service.option.oil">Замена масла</option>
+                <option value="Развал схождения" data-i18n="booking.service.option.alignment">Развал схождения</option>
+              </select>
+          </div>
+          <div style="margin-top:12px" class="form-row">
+            <input class="input" type="datetime-local" name="datetime" required data-i18n-placeholder="booking.datetime.placeholder">
+            <input class="input" type="text" name="car" placeholder="Марка/Модель (опционально)" data-i18n-placeholder="booking.car.placeholder">
+          </div>
+          <div style="margin-top:12px">
+            <textarea name="comment" placeholder="Комментарий" class="input" data-i18n-placeholder="booking.comment.placeholder"></textarea>
+          </div>
+          <div style="margin-top:14px;text-align:right">
+            <button type="submit" class="cta-btn" data-i18n="booking.submit">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div style="margin-top:14px" data-i18n="bookings.savedLabel">Сохранено заявок: <span id="bookings-count">0</span></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
